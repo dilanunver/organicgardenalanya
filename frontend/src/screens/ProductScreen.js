@@ -1,12 +1,24 @@
-import React from 'react'
-import products from '../products'
+import React, { useEffect, useState } from 'react'
+import axios from 'axios'
 import { useParams, Link } from 'react-router-dom'
 import { Row, Col, Image, ListGroup, Card, Button } from 'react-bootstrap'
 import Rating from '../components/Rating'
 
 const ProductScreen = () => {
+
+  const [product, setProduct] = useState({})
   const { id } = useParams()
-  const product = products.find(p => p.id === id)
+  useEffect(() => {
+    const fetchProduct = async () => {
+
+      const { data } = await axios.get(`/api/products/${id}`)
+      console.log(data)
+      setProduct(data)
+    }
+    fetchProduct()
+  }, [])
+
+
 
   return (
     <>
