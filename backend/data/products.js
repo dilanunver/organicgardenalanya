@@ -1,6 +1,6 @@
 const products = [
   {
-    id: '1',
+
     name: 'Avocado',
     image: '/organikbahcemalanyaimages/avocadotree.jpg',
     description:
@@ -13,7 +13,6 @@ const products = [
     numReviews: 12,
   },
   {
-    id: '2',
     name: 'Banana',
     image: '/organikbahcemalanyaimages/banana.jpg',
     description:
@@ -26,7 +25,6 @@ const products = [
     numReviews: 8,
   },
   {
-    id: '3',
     name: 'Lemon',
     image: '/organikbahcemalanyaimages/lemon.jpg',
     description:
@@ -39,7 +37,6 @@ const products = [
     numReviews: 12,
   },
   {
-    id: '4',
     name: 'Mango',
     image: '/organikbahcemalanyaimages/mango.jpg',
     description:
@@ -52,7 +49,6 @@ const products = [
     numReviews: 12,
   },
   {
-    id: '5',
     name: 'Orange',
     image: '/organikbahcemalanyaimages/orange.jpg',
     description:
@@ -65,7 +61,6 @@ const products = [
     numReviews: 10,
   },
   {
-    id: '6',
     name: 'Papaya',
     image: '/organikbahcemalanyaimages/papaya.jpg',
     description:
